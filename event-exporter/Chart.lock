@@ -1,0 +1,6 @@
+dependencies:
+- name: kubernetes-event-exporter
+  repository: https://charts.bitnami.com/bitnami
+  version: 2.10.0
+digest: sha256:c3e303d753fc1d0a13d94c80a931a3a628ccfa239a9467fdb1f9e70c60193f22
+generated: "2023-12-15T16:21:42.6112773+07:00"

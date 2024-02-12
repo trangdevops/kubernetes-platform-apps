@@ -1,0 +1,22 @@
+kubernetes-event-exporter:
+  config:
+    logFormat: json
+    logLevel: info
+    maxEventAgeSeconds: 60
+    kubeQPS: 200
+    kubeBurst: 1000
+    receivers:
+      - name: dump
+        stdout: { }
+    route:
+      routes:
+        - match:
+            - receiver: dump
+  fullnameOverride: ""
+  resources:
+    limits:
+      cpu: 200m
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
